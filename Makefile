@@ -19,7 +19,7 @@ talisman_setup:
 secret_detection: audit_trufflehog
 
 audit_trufflehog:
-	docker run \
+	sudo docker run \
 		-t \
 		--rm \
 		-v $(PWD):/target dxa4481/trufflehog \
